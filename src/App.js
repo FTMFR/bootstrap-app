@@ -1,15 +1,23 @@
 import './App.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import Menu from './component/Menus/Menu';
+import Menus from './component/Menu/Menus';
+import RightSide from './component/RightSide/RightSide';
+import LeftSide from './component/LeftSide/LeftSide';
 
 
 function App() {
   return (
     <Container fluid>
       <Row>
-        <Menu />
-        <Col></Col>
-        <Col></Col>
+        <Menus />
+      </Row>
+      <Row>
+        <Col>
+          <LeftSide />
+        </Col>
+        <Col>
+          <RightSide />
+        </Col>
       </Row>
     </Container>
   );
